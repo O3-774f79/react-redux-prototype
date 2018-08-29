@@ -4,8 +4,7 @@ import * as actionCreators from "../actions";
 import Box from "../component/box.js";
 class BoxCon extends React.Component {
   render() {
-    return <Box handleClick={this.props.loadColor} color={this.props.color} />;
-  }
+    return <Box handleClick={this.props.loadColor} color={this.props.color} /> }
 }
 
 const mapStateToProps = state => {

@@ -1,5 +1,7 @@
 import axios from "axios";
-import { changeColor } from "../action_constants";
+import {
+  changeColor
+} from "../action_constants";
 
 export const loadColor = () => {
   return async dispatch => {

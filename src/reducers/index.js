@@ -1,17 +1,14 @@
-let defaultState = {
-  color: "red"
-};
-let initState = {
-  color: "green"
-};
-const subReducer = (state = initState, action) => {
+import initialstate from "./initial_state"
+const subReducer = (state = initialstate, action) => {
   switch (action.type) {
     case "CHANGE_COLOR":
-      return { ...state, color: action.color };
+      return { ...state,
+        color: action.color
+      };
     default:
-      return { ...state };
+      return { ...state
+      };
   }
 };
-// export default mainReducer;
 
 export default subReducer;

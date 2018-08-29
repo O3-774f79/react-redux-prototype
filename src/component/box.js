@@ -15,6 +15,7 @@ class Box extends React.Component {
             onClick={() => {
               this.props.handleClick();
             }}
+            disabled={this.props.disable}
           >
             Change Color
           </button>
